@@ -76,7 +76,7 @@ export default class Settings {
   private state: SettingsState = { // initial (default) extension settings
     enabled: true,
     renew: {
-      enabled: true,
+      enabled: false,
       intervalMillis: 10 * 60 * 1000, // once in a 10 minutes
       onStartup: true,
     },
@@ -94,7 +94,7 @@ export default class Settings {
     },
     generator: {
       types: [
-        GeneratorType.chromeWin, GeneratorType.chromeLinux, GeneratorType.chromeMac,
+        GeneratorType.firefoxWin, GeneratorType.firefoxLinux, GeneratorType.firefoxMac,
       ],
     },
     blacklist: {
